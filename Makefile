@@ -21,3 +21,4 @@ decks: bootstrap
 
 clean:
 	rm -rf .bootstrapped
+	rm -rf out
