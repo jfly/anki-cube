@@ -10,8 +10,8 @@ PLL_BY_NAME = {  # Thanks to http://www.cyotheking.com/pll
     "H": "M2 U M2 U2 M2 U M2",
     "Z": "M2 U M2 U M' U2 M2 U2 M'",
     "Aa": "x R' U R' D2 R U' R' D2 R2 x'",
-    "Ab": "x' R U' R D2 R' U R D2 R2",
-    "F": "R' U2 R' U' y R' F' R2 U' R'  U R' F R U' F",
+    "Ab": "x' R U' R D2 R' U R D2 R2 x",
+    "F": "R' U2 R' U' y R' F' R2 U' R'  U R' F R U' F y'",
     "T": "R U R' U' R' F R2 U' R' U' R U R' F'",
     "Ga": "R2 U R' U R' U' R U' R2 D U' R' U R D'",
     "Gb": "R' U' R U D' R2 U R' U R U' R U' R2 D",
@@ -23,8 +23,8 @@ PLL_BY_NAME = {  # Thanks to http://www.cyotheking.com/pll
     "Jb": "R U R' F' R U R' U' R' F R2 U' R'",
     "Y": "F R U' R' U' R U R' F' R U R' F' U' F R U' R'",
     "E": "x' R U' R' D R U R' D' R U R' D R U' R' D' x",
-    "V": "R' U R' U' y R' F' R2 U' R' U R' F R F",
-    "Nb": "z U' R D' R2 U R' D U' R D' R2 U R' D",
+    "V": "R' U R' U' y R' F' R2 U' R' U R' F R F y'",
+    "Nb": "z U' R D' R2 U R' D U' R D' R2 U R' D z'",
     "Na": "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
 }
 
