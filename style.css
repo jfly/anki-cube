@@ -1,0 +1,62 @@
+@page {
+    size: landscape;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --columns: 3;
+    --print-margin-left: 0.0in;
+    --print-margin-right: 0.0in;
+    --rows: 4;
+    --print-margin-top: 0.0in;
+    --print-margin-bottom: 0.0in;
+
+    --column-width: calc((100% - var(--print-margin-left) - var(--print-margin-right)) / calc(var(--columns)));
+    --row-height: calc((100% - var(--print-margin-top) - var(--print-margin-bottom)) / calc(var(--rows)));
+}
+
+.page {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    page-break-after: always;
+
+    display: grid;
+
+    grid-template-columns: calc(var(--column-width) + var(--print-margin-left)) repeat(calc(var(--columns) - 2), var(--column-width)) calc(var(--column-width) + var(--print-margin-right));
+    grid-template-rows: calc(var(--row-height) + var(--print-margin-top)) repeat(calc(var(--rows) - 2), var(--row-height)) calc(var(--row-height) + var(--print-margin-bottom));
+}
+
+.case {
+    border: 1px dashed gray;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.case.touching-top {
+    padding-top: var(--print-margin-top);
+    border-top: none;
+}
+.case.touching-bottom {
+    padding-bottom: var(--print-margin-bottom);
+    border-bottom: none;
+}
+.case.touching-left {
+    padding-left: var(--print-margin-left);
+    border-left: none;
+}
+.case.touching-right {
+    padding-right: var(--print-margin-right);
+    border-right: none;
+}
+
+.case img {
+    height: 100%;
+    width: 100%;
+}
